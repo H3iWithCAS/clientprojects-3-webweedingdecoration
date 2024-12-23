@@ -1,0 +1,148 @@
+/* Resetting some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: red;
+    color: #212529;
+    line-height: 1.6;
+    
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+/* Header and Navigation Styles */
+.navbar {
+    background-color: #1629A1;
+}
+
+.navbar a {
+    color: red;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Hero Section Styles */
+h3, h4 {
+    color: #1629A1;
+}
+
+h3.text-center {
+    font-size: 2rem;
+}
+
+h4.text-center {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Main Content Section */
+main {
+    padding: 2rem 0;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Card and Section Layouts */
+.row {
+    margin-bottom: 1.5rem;
+}
+
+.col-6 {
+    margin-bottom: 1rem;
+}
+
+.p-5 {
+    padding: 2rem;
+}
+
+img.img-fluid {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #1629A1;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Small Screen Adjustments */
+@media screen and (max-width: 768px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .col-6 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    h3, h4 {
+        font-size: 1.5rem;
+    }
+}

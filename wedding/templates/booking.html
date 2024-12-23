@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h3>Booking a Wedding Decoration</h3>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Name" class="form-control" required>
+        <input type="text" name="phone" placeholder="Phone" class="form-control" required>
+        <input type="text" name="service" placeholder="Service" class="form-control" required>
+        <input type="date" name="date" class="form-control" required>
+        <button type="submit" class="btn btn-primary">Book</button>
+    </form>
+{% endblock %}

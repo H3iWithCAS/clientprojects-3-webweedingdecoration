@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h3>Bookings</h3>
+    <a href="{% url 'create_booking' %}" class="btn btn-primary">Create New Booking</a>
+    <ul>
+        {% for booking in bookings %}
+            <li>
+                {{ booking.name }} - {{ booking.service }} ({{ booking.date }})
+                <a href="{% url 'update_booking' booking.pk %}">Edit</a> |
+                <a href="{% url 'delete_booking' booking.pk %}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
